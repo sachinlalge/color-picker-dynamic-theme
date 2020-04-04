@@ -1,0 +1,60 @@
+@import "../../theme/theme.scss";
+@import "../../theme/functions.scss";
+
+.navigation {
+  background-color: var(--navBackground);
+  color: var(--navColor);
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+  height: 50px;
+  font-family: $default-font;
+  padding: 24px;
+  margin: 0;
+  margin-bottom: 50px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.card {
+  background-color: var(--cardBackground);
+  color: var(--cardColor);
+
+  width: 200px;
+  height: auto;
+  border: 1px solid black;
+  margin: 12px;
+  padding: 24px;
+  font-family: $default-font;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+button {
+  background-color: var(--buttonBackground);
+  color: var(--buttonColor);
+  font-family: $default-font;
+  padding: 12px;
+}
+.footer {
+  background-color: var(--footerBackground);
+  color: var(--footerColor);
+  font-family: $default-font;
+  text-align: center;
+  padding: 36px;
+  margin-top: 24px;
+  height: 150px;
+  position: relative;
+  bottom: 0;
+}

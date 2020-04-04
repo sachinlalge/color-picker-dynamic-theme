@@ -1,0 +1,13 @@
+<nav class="navigation">
+    <p>This is My Header</p>
+</nav>
+<div class="card-container">
+    <div *ngFor="let card of cardSamples" class="card">
+        <h1>{{card.title}}</h1>
+        <p>{{card.value}}</p>
+        <button>Read more</button>
+    </div>
+</div>
+<div class="footer">
+    <h2>This is my footer</h2>
+</div>

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'color-picker-dynamic-theme';
+  title = 'edge-color-picker';
+  public isSwitcherShown = false;
+
+  toggleThemeSwitcher() {
+    this.isSwitcherShown = !this.isSwitcherShown;
+  }
 }
