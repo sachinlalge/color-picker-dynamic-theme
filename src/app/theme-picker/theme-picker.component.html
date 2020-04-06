@@ -1,5 +1,14 @@
 <div class="theme">
   <form #gsForm="ngForm" (ngSubmit)="onSubmit(gsForm)">
+
+    <div>
+      <label>Theme Name : </label>
+      <select placeholder="Select Theme" class="selectClass" name="tname" ngModel>
+        <!-- <option value="0">Select Theme</option> -->
+        <option *ngFor="let content of themes" [value]="content.tid">{{content.tname}}</option>
+      </select>
+    </div>
+
     <label>Set Navigation Font Color: </label>
     <!-- <input #navColor name="globalNavColor" type="color" ngModel> -->
     <input  [(colorPicker)]="color1" [style.background]="color1" 
@@ -10,25 +19,32 @@
       (cpSliderDragEnd)="onEventLog('cpSliderDragEnd', $event)"/>
     <br>
     <label>Set Navigation Background Color: </label>
-    <input #navBackground name="globalNavBackground" type="color" ngModel>
+    <!-- <input #navBackground name="globalNavBackground" type="color" ngModel> -->
+    <input  [(colorPicker)]="color2" [style.background]="color2" />
     <br>
     <label>Set Card Font Color: </label>
-    <input #cardColor name="globalCardColor" type="color" ngModel>
+    <!-- <input #cardColor name="globalCardColor" type="color" ngModel> -->
+    <input  [(colorPicker)]="color3" [style.background]="color3" />
     <br>
     <label>Set Card Background Color:</label>
-    <input #cardBackground name="globalCardBackground" type="color" ngModel>
+    <!-- <input #cardBackground name="globalCardBackground" type="color" ngModel> -->
+    <input  [(colorPicker)]="color4" [style.background]="color4" />
     <br>
     <label>Set Button Font Color: </label>
-    <input #buttonColor name="globalButtonColor" type="color" ngModel>
+    <!-- <input #buttonColor name="globalButtonColor" type="color" ngModel> -->
+    <input  [(colorPicker)]="color5" [style.background]="color5" />
     <br>
     <label>Set Button Background Color:</label>
-    <input #buttonBackground name="globalButtonBackground" type="color" ngModel>
+    <!-- <input #buttonBackground name="globalButtonBackground" type="color" ngModel> -->
+    <input  [(colorPicker)]="color6" [style.background]="color6" />
     <br>
     <label>Set Footer Font Color: </label>
-    <input #footerColor name="globalFooterColor" type="color" ngModel>
+    <!-- <input #footerColor name="globalFooterColor" type="color" ngModel> -->
+    <input  [(colorPicker)]="color7" [style.background]="color7" />
     <br>
     <label>Set Footer Background Color: </label>
-    <input #footerBackground name="globalFooterBackground" type="color" ngModel>
+    <!-- <input #footerBackground name="globalFooterBackground" type="color" ngModel> -->
+    <input  [(colorPicker)]="color8" [style.background]="color8" />
     <br>
     <!-- <label>Set Footer Text Alignment:</label>
 <select name="globalFooterAlignment" ngModel>

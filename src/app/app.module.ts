@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ColorPickerModule } from 'ngx-color-picker';
 
 import { AppComponent } from './app.component';
@@ -16,6 +16,7 @@ import { ThemePickerComponent } from './theme-picker/theme-picker.component';
   imports: [
     ColorPickerModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserModule.withServerTransition({ appId: 'serverApp' })
   ],
   providers: [],
